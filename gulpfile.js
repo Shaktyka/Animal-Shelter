@@ -17,3 +17,30 @@ var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
+
+gulp.task("style", function() {
+  gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css")
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("serve", function() {
+  server.init({
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("source/less/**/*.less", ["style"]);
+  gulp.watch("source/*.html", ["html"]);
+});
