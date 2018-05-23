@@ -1,0 +1,15 @@
+{
+  "name": "animal-shelter",
+  "version": "1.0.0",
+  "description": "Проект, созданный по макету из HTML Academy для резюме.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elena Petrenko",
+  "license": "ISC"
+}
