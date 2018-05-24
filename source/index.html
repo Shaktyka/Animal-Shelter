@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
+<body class="page page--pets">
   <header class="page-header">
     <div class="page-header__wrap">
       <div class="page-header__logo">
@@ -56,39 +56,47 @@
       </div>
     </section>
 
-    <section class="pets-list">
-      <div class="pets-list__wrap">
-        <h2 class="pets-list__title">Our friends who are looking for a house</h2>
-        <ul class="pets-list__list slider">
-          <li class="slider__control">
-            <a class="slider__prev" href="#">Back</a>
-          </li>
-          <li class="slider__item">
-            <p class="slider__card">
-              <img class="slider__img" src="" alt="">
-              <h3 class="slider__title"></h3>
-              <a class="slider__button button" href="#"></a>
-            </p>
-          </li>
-          <li class="slider__item">
-            <p class="slider__card">
-              <img class="slider__img" src="" alt="">
-              <h3 class="slider__title"></h3>
-              <a class="slider__button button" href="#"></a>
-            </p>
-          </li>
-          <li class="slider__item">
-            <p class="slider__card">
-              <img class="slider__img" src="" alt="">
-              <h3 class="slider__title"></h3>
-              <a class="slider__button button" href="#"></a>
-            </p>
-          </li>
-          <li class="slider__control">
-            <a class="slider__next" href="#">Next</a>
-          </li>
-        </ul>
-        <a class="pets-list__all" href="shop.html">Get to knew the rest</a>
+    <section class="pets">
+      <div class="pets__wrap">
+        <h2 class="pets__title">Our friends who are looking for a house</h2>
+        <div class="pets__slider slider">
+          <ul class="slider__control">
+            <li class="slider__control-item slider__control-item--prev">
+              <a href="#">Back</a>
+            </li>
+          </ul>
+          <ul class="slider__list">
+            <li class="slider__item card">
+              <div class="card__wrap">
+                <img class="card__img" src="" alt="">
+                <h3 class="card__title"></h3>
+                <a class="card__button button" href="#"></a>
+              </div>
+            </li>
+            <li class="slider__item card">
+              <div class="card__wrap">
+                <img class="card__img" src="" alt="">
+                <h3 class="card__title"></h3>
+                <a class="card__button button" href="#"></a>
+              </div>
+            </li>
+            <li class="slider__item card">
+              <div class="card__wrap">
+                <img class="card__img" src="" alt="">
+                <h3 class="card__title"></h3>
+                <a class="card__button button" href="#"></a>
+              </div>
+            </li>
+          </ul>
+          <ul class="slider__control">
+            <li class="slider__control-item slider__control-item--next">
+              <a href="#">Next</a>
+            </li>
+          </ul>
+        </div>
+        <p class="pets__show-all">
+          <a class="button" href="shop.html">Get to knew the rest</a>
+        </p>
       </div>
     </section>
 
