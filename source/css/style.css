@@ -133,6 +133,7 @@ a {
   font-family: "Georgia", serif;
   font-size: 44px;
   line-height: 57px;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -339,12 +340,48 @@ a {
 }
 
 .page-footer__wrap {
+  width: 1170px;
   margin: 0 auto;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.contacts,
+.location {
+  width: 300px;
+}
+
+.contacts__slogan,
+.location__slogan {
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.contacts__means,
+.location__adresses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__means li {
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 45px;
+  color: #f1cdb3;
+}
+
+.location__adresses li {
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #f1cdb3;
 }
 
 .page-footer__pic {
@@ -355,3 +392,7 @@ a {
 }
 
 /* Modal pet */
+
+.modal {
+  display: none;
+}
