@@ -53,6 +53,7 @@ a {
   font-family: "Georgia", serif;
   font-size: 17px;
   line-height: 57px;
+  font-weight: 400;
   color: #292929;
 }
 
@@ -244,10 +245,31 @@ a {
   margin: 0 auto;
 }
 
+.help__slogan {
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #545454;
+}
+
 .needs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.needs__link {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #545454;
 }
 
 /* Donation */
@@ -267,6 +289,40 @@ a {
 
 .donation__desk {
   width: 385px;
+}
+
+.donation__slogan {
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #545454;
+}
+
+.donation__bank {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #545454;
+}
+
+.donation__requisites {
+  background-color: #f1cdb3;
+  border-radius: 5px;
+
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 45px;
+  font-weight: 400;
+  color: #292929;
+}
+
+.donation__legal {
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+  font-style: italic;
 }
 
 .donation__pic {
