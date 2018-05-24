@@ -252,6 +252,8 @@ a {
 /* Pets slider */
 
 .pets {
+  padding-top: 87px;
+  padding-bottom: 70px;
   background-color: #f6f6f6;
 }
 
@@ -261,7 +263,12 @@ a {
 }
 
 .pets__title {
+  display: flex;
+  justify-content: center;
+
+  /*  width: 398px;*/
   margin: 0;
+  margin-bottom: 65px;
   padding: 0;
 
   font-family: "Georgia", serif;
@@ -269,6 +276,12 @@ a {
   line-height: 45px;
   font-weight: 400;
   color: #545454;
+
+  text-align: center;
+}
+
+.pets__slider {
+  margin-bottom: 66px;
 }
 
 .slider {
@@ -298,6 +311,8 @@ a {
 }
 
 .card__title {
+  margin: 0;
+
   font-family: "Georgia", serif;
   font-size: 20px;
   line-height: 45px;
@@ -313,6 +328,16 @@ a {
   color: #545454;
 }
 
+.pets__show-all {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.pets__show-button {
+  width: 268px;
+}
+
 /* Help */
 
 .help {
@@ -325,6 +350,8 @@ a {
 }
 
 .help__slogan {
+  margin: 0;
+
   font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 45px;
