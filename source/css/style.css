@@ -341,6 +341,7 @@ a {
 /* Help */
 
 .help {
+  padding: 70px 0 80px 0;
   background-color: #fafafa;
 }
 
@@ -350,12 +351,16 @@ a {
 }
 
 .help__slogan {
-  margin: 0;
+  margin: 0 auto 70px;
+  padding: 0;
+  width: 318px;
+  text-align: center;
 
   font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
+  letter-spacing: 1.6px;
   color: #545454;
 }
 
@@ -387,6 +392,7 @@ a {
 }
 
 .donation__wrap {
+  width: 1170px;
   margin: 0 auto;
 
   display: flex;
@@ -489,6 +495,10 @@ a {
   justify-content: flex-start;
 }
 
+.contacts {
+  margin-right: 150px;
+}
+
 .contacts,
 .location {
   width: 300px;
@@ -496,25 +506,66 @@ a {
 
 .contacts__slogan,
 .location__slogan {
+  margin: 0;
+  padding: 0;
+
   font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 45px;
   font-weight: 400;
+  letter-spacing: 1.6px;
   color: #ffffff;
 }
 
-.contacts__means,
+.contacts__slogan {
+  margin-bottom: 33px;
+}
+
+.location__slogan {
+  margin-bottom: 30px;
+}
+
+.contacts__list,
 .location__adresses {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.contacts__means li {
+.contacts__list li {
+  position: relative;
+  padding-left: 63px;
+
   font-family: "Times New Roman", serif;
   font-size: 20px;
   line-height: 45px;
   color: #f1cdb3;
+}
+
+.contacts__list li::before {
+  position: absolute;
+  content: "";
+  width: 41px;
+  height: 34px;
+  background-position: 0 0;
+}
+
+.contacts__email::before {
+  top: 5px;
+  left: 0;
+
+  background-image: url("../img/envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 41px 27px;
+}
+
+.contacts__phone {
+  top: 0;
+  left: 0;
+
+  background-image: url("../img/telephone.svg");
+  background-repeat: no-repeat;
+  background-size: 41px 33px;
 }
 
 .location__adresses li {
@@ -526,6 +577,7 @@ a {
 
 .page-footer__pic {
   margin: 0;
+  margin-left: auto;
   padding: 0;
   width: 300px;
   height: 316px;
