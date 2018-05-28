@@ -368,14 +368,32 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.needs__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  min-height: 120px;
+  /*  padding-top: 95px;*/
+}
+
+.needs__item svg {
+  width: 70px;
+  fill: #f1cdb4;
+}
+
 .needs__link {
+  display: block;
+  margin-top: auto;
+
   font-family: "Georgia", serif;
   font-size: 20px;
   line-height: 24px;
