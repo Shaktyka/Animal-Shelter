@@ -630,8 +630,28 @@ a {
 
 .modal__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -55px;
+  right: -55px;
+
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  background-color: #fafafa;
+
+  border: 2px solid #f1cdb4;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.modal__close svg {
+  position: relative;
+  top: 2px;
+
+  width: 14px;
+  height: 14px;
+
+  fill: #292929;
 }
 
 .pet__pic {
