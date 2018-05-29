@@ -604,5 +604,11 @@ a {
 /* Modal pet */
 
 .modal {
-  display: none;
+  display: block;
+}
+
+.pet {
+  width: 970px;
+  height: 470px;
+  box-sizing: border-box;
 }
