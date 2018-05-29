@@ -626,6 +626,10 @@ a {
   margin-right: 50px;
 }
 
+.pet__desc {
+  padding: 60px 35px 30px 0;
+}
+
 .pet__name,
 .pet__breed {
   font-family: "Georgia", serif;
@@ -635,28 +639,28 @@ a {
 }
 
 .pet__name {
-  margin: 0;
+  margin: 0 0 15px 0;
 
   font-size: 35px;
   line-height: 45px;
 }
 
 .pet__breed {
-  margin: 0;
+  margin: 0 0 30px 0;
 
   font-size: 20px;
   line-height: 34px;
 }
 
 .pet__text {
-  margin: 0;
-  margin: 0;
+  margin: 0 0 30px 0;
 
   width: 416px;
   color: #4c4c4c;
 }
 
 .pet__params {
+  list-style: none;
   margin: 0;
   padding: 0 0 0 17px;
 
