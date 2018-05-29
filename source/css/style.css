@@ -614,10 +614,24 @@ a {
 }
 
 .pet {
+  position: relative;
   width: 970px;
   height: 470px;
   box-sizing: border-box;
+
+  margin: 0 auto;
   background-color: #fafafa;
+
+  border: 1px solid #fafafa;
+  border-radius: 15px;
+
+  box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .pet__pic {
@@ -642,14 +656,14 @@ a {
   margin: 0 0 15px 0;
 
   font-size: 35px;
-  line-height: 45px;
+  line-height: 35px;
 }
 
 .pet__breed {
   margin: 0 0 30px 0;
 
   font-size: 20px;
-  line-height: 34px;
+  line-height: 20px;
 }
 
 .pet__text {
