@@ -607,8 +607,60 @@ a {
   display: block;
 }
 
+.pet__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .pet {
   width: 970px;
   height: 470px;
   box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.pet__pic {
+  margin: 0;
+  padding: 0;
+  margin-right: 50px;
+}
+
+.pet__name,
+.pet__breed {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  color: #545454;
+}
+
+.pet__name {
+  margin: 0;
+
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.pet__breed {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.pet__text {
+  margin: 0;
+  margin: 0;
+
+  width: 416px;
+  color: #4c4c4c;
+}
+
+.pet__params {
+  margin: 0;
+  padding: 0 0 0 17px;
+
+  font-size: 17px;
+  line-height: 34px;
+  color: #545454;
 }
