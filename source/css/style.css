@@ -668,3 +668,17 @@ a {
   line-height: 34px;
   color: #545454;
 }
+
+.pet__param {
+  position: relative;
+}
+
+.pet__param::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -14px;
+  width: 5px;
+  height: 5px;
+  background-color: #f1cdb3;
+}
