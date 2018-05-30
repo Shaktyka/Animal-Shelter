@@ -56,19 +56,27 @@ a {
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
+
   vertical-align: top;
   text-align: center;
-  border-radius: 30px;
 
   font-family: "Georgia", serif;
   font-size: 17px;
-  line-height: 57px;
+  line-height: 17px;
   font-weight: 400;
   color: #292929;
+
+  border-radius: 30px;
 }
 
 .button--pink {
   background-color: #f1cdb3;
+}
+
+.button--still {
+  background-color: transparent;
+  border: 2px solid #f1cdb3;
 }
 
 /* Header */
@@ -181,15 +189,14 @@ a {
 }
 
 .promo__desc {
-  margin: 0;
-  margin-top: 45px;
+  margin: 45px 0 42px 0;
   padding: 0;
 }
 
 .promo-button {
   box-sizing: border-box;
   width: 205px;
-  margin-top: 42px;
+
 }
 
 /* About */
@@ -305,27 +312,56 @@ a {
   justify-content: center;
 }
 
+.slider__item {
+  margin-right: 50px;
+}
+
+.slider__item:last-child {
+  margin-right: 0;
+}
+
+.card__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5px 0 34px 0;
+  background-color: #fafafa;
+
+  border-radius: 15px;
+}
+
+.card__wrap:hover {
+  box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
+}
+
 .card__img-wrap {
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 
 .card__title {
-  margin: 0;
+  margin: 0 0 20px 0;
 
   font-family: "Georgia", serif;
   font-size: 20px;
-  line-height: 45px;
+  line-height: 20px;
   font-weight: 400;
   color: #545454;
 }
 
 .card__button {
+  width: 188px;
+  margin-top: auto;
+  padding: 15px 10px 16px;
+
   font-family: "Georgia", serif;
-  font-size: 17px;
-  line-height: 57px;
   font-weight: 400;
-  color: #545454;
+  color: #292929;
+}
+
+.card__button:hover {
+  background-color: #f1cdb3;
 }
 
 .pets__show-all {
