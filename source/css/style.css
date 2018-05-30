@@ -703,25 +703,28 @@ a {
   padding: 0;
 }
 
-.contacts__list li {
+.contacts__item {
   position: relative;
+  margin-bottom: 10px;
   padding-left: 63px;
 
   font-family: "Times New Roman", serif;
   font-size: 20px;
-  line-height: 45px;
+  line-height: 30px;
   color: #f1cdb3;
 }
 
-.contacts__list li::before {
+.contacts__item::before {
   position: absolute;
   content: "";
+  left: 0;
+
   width: 41px;
   height: 34px;
   background-position: 0 0;
 }
 
-.contacts__email::before {
+.contacts__item--email::before {
   top: 5px;
   left: 0;
 
@@ -730,7 +733,7 @@ a {
   background-size: 41px 27px;
 }
 
-.contacts__phone {
+.contacts__item--phone::before {
   top: 0;
   left: 0;
 
