@@ -108,6 +108,15 @@ a {
   background-position: 170% bottom, center top;
 }
 
+.page--pets .page-header {
+  min-height: inherit;
+
+  background-color: #fafafa;
+  background-image: none;
+
+  background-color: yellow;
+}
+
 .page-header__wrap {
   margin: 0 auto;
   width: 1170px;
@@ -895,3 +904,7 @@ a {
   height: 5px;
   background-color: #f1cdb3;
 }
+
+// Страница магазина животных
+
+
