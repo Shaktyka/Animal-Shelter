@@ -455,14 +455,28 @@ a {
   color: #545454;
 }
 
+.help__list {
+  margin: 0;
+  padding: 0;
+}
+
+.help__list--top {
+  margin-bottom: 75px;
+  padding-left: 83px;
+  padding-right: 60px;
+}
+
+.help__list--bottom {
+  padding-left: 184px;
+  padding-right: 150px;
+}
+
 .needs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
