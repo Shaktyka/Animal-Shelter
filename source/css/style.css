@@ -113,14 +113,11 @@ a {
 
   background-color: #fafafa;
   background-image: none;
-
-  background-color: yellow;
 }
 
 .page-header__wrap {
   margin: 0 auto;
   width: 1170px;
-  outline: 1px solid white;
 }
 
 .page-header__nav-container {
@@ -152,13 +149,27 @@ a {
   font-family: "Georgia", serif;
   font-size: 32px;
   line-height: 32px;
+  letter-spacing: 1.6px;
   color: #f1cdb3;
+}
+
+.page--pets .page-header__logo-name {
+  letter-spacing: 1.6px;
+  color: #545454;
 }
 
 .page-header__logo-desc {
   font-size: 13px;
   line-height: 29px;
   color: #ffffff;
+}
+
+.page--pets .page-header__logo-desc {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #292929;
 }
 
 /* Navigation */
@@ -192,6 +203,10 @@ a {
   vertical-align: top;
   line-height: 29px;
   color: #cdcdcd;
+}
+
+.page--pets .site-list__link {
+  color: #545454;
 }
 
 /* Promo */
@@ -297,7 +312,6 @@ a {
   display: flex;
   justify-content: center;
 
-  /*  width: 398px;*/
   margin: 0;
   margin-bottom: 65px;
   padding: 0;
@@ -309,6 +323,10 @@ a {
   color: #545454;
 
   text-align: center;
+}
+
+.page--pets .pets__title {
+  margin-bottom: 55px;
 }
 
 .pets__slider {
