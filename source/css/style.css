@@ -923,6 +923,31 @@ a {
   background-color: #f1cdb3;
 }
 
-// Страница магазина животных
+// Пагинатор
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.pagination__list {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item {
+  margin-right: 17px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
+}
+
+.pagination__link:hover {
+  background-color: #f1cdb3;
+}
