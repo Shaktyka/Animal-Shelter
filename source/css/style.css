@@ -740,10 +740,34 @@ a {
 }
 
 .location__adresses li {
+  position: relative;
+  padding-left: 46px;
+
   font-family: "Times New Roman", serif;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 24px;
   color: #f1cdb3;
+}
+
+.location__adresses li::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -6px;
+  width: 30px;
+  height: 36px;
+
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location__boston::before {}
+
+.location__london::before {}
+
+.location__boston {
+  margin-bottom: 30px;
 }
 
 .page-footer__pic {
@@ -757,7 +781,7 @@ a {
 /* Modal pet */
 
 .modal {
-  display: block;
+  display: none;
 }
 
 .pet__wrapper {
