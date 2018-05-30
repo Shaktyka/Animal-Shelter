@@ -83,6 +83,18 @@ a {
   border: 2px solid #f1cdb3;
 }
 
+.button--round {
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  background-color: transparent;
+
+  border: 2px solid #f1cdb4;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
 /* Header */
 
 .page-header {
@@ -308,11 +320,45 @@ a {
   padding: 0;
 }
 
+.slider__control {
+  display: flex;
+  align-items: center;
+}
+
+.slider__control-button {
+  display: block;
+}
+
+.slider__control-button:hover {
+  background-color: #f1cdb3;
+}
+
+.slider__control-button svg {
+  position: relative;
+  width: 15px;
+  height: 10px;
+  fill: #292929;
+}
+
+.slider__control-item--prev svg {
+  top: 8px;
+  left: 14px;
+}
+
+.slider__control-item--next svg {
+  top: 14px;
+  left: 16px;
+  transform: rotate(180deg);
+}
+
 .slider__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+
+  margin-left: 79px;
+  margin-right: 79px;
 }
 
 .slider__item {
@@ -341,6 +387,11 @@ a {
 .card__img-wrap {
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+.card__img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card__title {
@@ -672,16 +723,6 @@ a {
   position: absolute;
   top: -55px;
   right: -55px;
-
-  box-sizing: border-box;
-  width: 51px;
-  height: 51px;
-  background-color: #fafafa;
-
-  border: 2px solid #f1cdb4;
-  border-radius: 50%;
-
-  cursor: pointer;
 }
 
 .modal__close svg {
