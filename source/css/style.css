@@ -318,7 +318,7 @@ a {
 
   font-family: "Georgia", serif;
   font-size: 35px;
-  line-height: 45px;
+  line-height: 35px;
   font-weight: 400;
   color: #545454;
 
@@ -454,6 +454,32 @@ a {
 .pets__show-button {
   width: 268px;
   padding: 17px 10px 18px;
+}
+
+/* Список животных */
+
+.page--pets .pets__list {
+  margin-bottom: 62px;
+}
+
+.list__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page--pets .list__item {
+  margin-right: 30px;
+}
+
+.page--pets .list__item:nth-child(4n),
+.page--pets .list__item:nth-child(8n) {
+  margin-right: 0;
 }
 
 /* Help */
@@ -923,7 +949,7 @@ a {
   background-color: #f1cdb3;
 }
 
-// Пагинатор
+/* Пагинатор */
 
 .pagination {
   display: flex;
