@@ -401,6 +401,7 @@ a {
   flex-direction: column;
   align-items: center;
 
+  width: 270px;
   padding: 5px 0 34px 0;
   background-color: #fafafa;
 
@@ -459,7 +460,7 @@ a {
 /* Список животных */
 
 .page--pets .pets__list {
-  margin-bottom: 62px;
+  margin-bottom: 28px;
 }
 
 .list__list {
@@ -475,6 +476,7 @@ a {
 
 .page--pets .list__item {
   margin-right: 30px;
+  margin-bottom: 34px;
 }
 
 .page--pets .list__item:nth-child(4n),
