@@ -52,6 +52,11 @@ a {
   overflow: hidden;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+
 /* Button */
 
 .button {
@@ -113,11 +118,6 @@ a {
 
   background-color: #fafafa;
   background-image: none;
-}
-
-.page-header__wrap {
-  margin: 0 auto;
-  width: 1170px;
 }
 
 .page-header__nav-container {
@@ -247,9 +247,6 @@ a {
 }
 
 .about__wrap {
-  margin: 0 auto;
-  width: 1170px;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -301,11 +298,6 @@ a {
   padding-top: 87px;
   padding-bottom: 70px;
   background-color: #f6f6f6;
-}
-
-.pets__wrap {
-  width: 1170px;
-  margin: 0 auto;
 }
 
 .pets__title {
@@ -493,11 +485,6 @@ a {
   background-color: #fafafa;
 }
 
-.help__wrap {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 .help__slogan {
   margin: 0 auto 70px;
   padding: 0;
@@ -620,9 +607,6 @@ a {
 }
 
 .donation__wrap {
-  width: 1170px;
-  margin: 0 auto;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -714,9 +698,6 @@ a {
 }
 
 .page-footer__wrap {
-  width: 1170px;
-  margin: 0 auto;
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
