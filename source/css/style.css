@@ -402,7 +402,7 @@ a {
   align-items: center;
 
   width: 270px;
-  padding: 5px 0 34px 0;
+  padding: 0 0 34px 0;
   background-color: #fafafa;
 
   border-radius: 15px;
@@ -418,8 +418,10 @@ a {
 }
 
 .card__img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 270px;
+  height: 270px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card__title {
