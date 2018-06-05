@@ -427,7 +427,7 @@ a {
 }
 
 .card__img-wrap {
-  margin: 0 0 23px 0;
+  margin: 0 0 26px 0;
   padding: 0;
 }
 
@@ -637,7 +637,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .donation__pic {
