@@ -496,7 +496,7 @@ a {
 
 .page--pets .list__item {
   margin-right: 30px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 
 .page--pets .list__item:nth-child(4n),
@@ -759,7 +759,7 @@ a {
 }
 
 .location__slogan {
-  margin-bottom: 33px;
+  margin-bottom: 26px;
 }
 
 .contacts__list,
@@ -771,7 +771,7 @@ a {
 
 .contacts__item {
   position: relative;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
   padding-left: 63px;
 
   font-family: "Times New Roman", serif;
@@ -802,13 +802,17 @@ a {
   background-size: 42px 40px;
 }
 
+.contacts__item--phone {
+  letter-spacing: 1.2px;
+}
+
 .contacts__item--phone::before {
-  top: 0;
+  top: -5px;
   left: 0;
 
   background-image: url("../img/telephone.svg");
   background-repeat: no-repeat;
-  background-size: 41px 33px;
+  background-size: 41px 41px;
 
   letter-spacing: 1.2px;
 }
@@ -841,9 +845,13 @@ a {
   background-size: cover;
 }
 
-.location__boston::before {}
+.location__adresses .location__boston::before {
+  top: 6px;
+}
 
-.location__london::before {}
+.location__adresses .location__london::before {
+  top: -7px;
+}
 
 .location__boston {
   margin-bottom: 30px;
