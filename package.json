@@ -1,8 +1,8 @@
 {
-  "name": "yes",
+  "name": "Animal Shelter",
   "version": "1.0.0",
   "private": true,
-  "description": "Проект Yes для портфолио",
+  "description": "Сайт приюта животных для портфолио",
   "devDependencies": {
     "autoprefixer": "8.3.x",
     "browser-sync": "2.23.x",
