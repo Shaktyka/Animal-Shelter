@@ -1,36 +1,25 @@
 {
-  "name": "animal-shelter",
+  "name": "yes",
   "version": "1.0.0",
-  "description": "Проект, созданный по макету из HTML Academy для резюме.",
-  "dependencies": {
-    "svgxuse": "^1.2.6"
-  },
+  "private": true,
+  "description": "Проект Yes для портфолио",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "browser-sync": "^2.24.4",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^4.0.0",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-less": "^3.5.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-postcss": "^7.0.1",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.2.3",
-    "gulp-svgstore": "^6.1.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-webp": "^3.0.0",
-    "posthtml-include": "^1.1.0",
-    "run-sequence": "^2.2.1"
+    "autoprefixer": "8.3.x",
+    "browser-sync": "2.23.x",
+    "gulp": "3.9.x",
+    "gulp-less": "4.0.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "7.0.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "stylelint": "9.2.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "build": "gulp style",
+    "start": "gulp serve"
   },
   "browserslist": [
     "last 2 versions",
@@ -47,7 +36,5 @@
   ],
   "engines": {
     "node": "8.11"
-  },
-  "author": "Elena Petrenko",
-  "license": "ISC"
+  }
 }
