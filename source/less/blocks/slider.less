@@ -5,11 +5,18 @@
   justify-content: center;
 }
 
-.slider__control,
 .slider__list {
-  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
+  margin-left: 79px;
+  margin-right: 79px;
+
+  list-style: none;
 }
 
 .slider__control {
@@ -32,25 +39,15 @@
   fill: @button-text;
 }
 
-.slider__control-item--prev svg {
+.slider__control--prev svg {
   top: 8px;
   left: 14px;
 }
 
-.slider__control-item--next svg {
+.slider__control--next svg {
   top: 14px;
   left: 16px;
   transform: rotate(180deg);
-}
-
-.slider__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-left: 79px;
-  margin-right: 79px;
 }
 
 .slider__item {
