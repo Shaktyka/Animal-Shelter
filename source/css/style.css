@@ -478,12 +478,19 @@ a {
 }
 .site-list__item--active {
   border-bottom: 3px solid #f1cdb3;
+  color: #292929;
 }
 .site-list__link {
   display: inline-block;
   vertical-align: top;
   line-height: 29px;
   color: #cdcdcd;
+}
+.page--main .site-list__link:hover {
+  color: #f1cdb3;
+}
+.page--pets .site-list__link:hover {
+  color: #000000;
 }
 .page--pets .site-list__link {
   color: #545454;
