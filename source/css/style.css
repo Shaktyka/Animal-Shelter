@@ -907,7 +907,7 @@ a {
 }
 .donation {
   padding-top: 61px;
-  padding-bottom: 85px;
+  padding-bottom: 81px;
   background-color: #f6f6f6;
 }
 .donation__wrap {
@@ -946,7 +946,7 @@ a {
   color: #545454;
 }
 .donation__bank {
-  margin: 0 0 13px 0;
+  margin: 0 0 14px 0;
   font-family: "Georgia", serif;
   font-size: 15px;
   line-height: 15px;
@@ -960,24 +960,25 @@ a {
           box-sizing: border-box;
   width: 320px;
   background-color: #f1cdb3;
-  margin: 0 0 33px 0;
-  padding-left: 53px;
+  margin: 0 0 29px 0;
+  padding-left: 57px;
+  padding-bottom: 2px;
   font-family: "Times New Roman", serif;
   font-size: 20px;
   line-height: 45px;
   font-weight: 400;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.3px;
   color: #292929;
   border-radius: 10px;
 }
 .donation__requisites::before {
   position: absolute;
   content: "";
-  top: 11px;
-  left: 15px;
+  top: 9px;
+  left: 3px;
   width: 30px;
   height: 24px;
-  background-size: 30px 24px;
+  background-size: 52px 29px;
   background-image: url("../img/credit-card.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -991,6 +992,7 @@ a {
   font-style: italic;
 }
 .page-footer {
+  padding-top: 5px;
   background-color: #19181b;
 }
 .page-footer__wrap {
