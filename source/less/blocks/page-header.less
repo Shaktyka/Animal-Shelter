@@ -1,0 +1,73 @@
+.page-header {
+  width: 100%;
+  min-height: 925px;
+
+  background-color: #1b1b1d;
+  background-image: url("../img/dog-background.png"),
+    url("../img/background.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 208% bottom, center top;
+}
+
+.page--pets .page-header {
+  min-height: inherit;
+  padding-bottom: 23px;
+
+  background-color: #fafafa;
+  background-image: none;
+}
+
+.page-header__nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  margin-top: 55px;
+}
+
+.page--pets .page-header__logo {
+  margin-top: 27px;
+}
+
+.page-header__logo-link {
+  display: block;
+}
+
+.page-header__logo-name,
+.page-header__logo-desc {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__logo-name {
+  margin-bottom: 1px;
+
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+  color: #f1cdb3;
+}
+
+.page--pets .page-header__logo-name {
+  letter-spacing: 1.6px;
+  color: #545454;
+}
+
+.page-header__logo-desc {
+  font-size: 13px;
+  line-height: 29px;
+  color: #ffffff;
+  letter-spacing: 1.3px;
+}
+
+.page--pets .page-header__logo-desc {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #292929;
+}

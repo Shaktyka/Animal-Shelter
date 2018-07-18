@@ -1,0 +1,39 @@
+.location {
+  padding-top: 64px;
+}
+
+.location__adresses li {
+  position: relative;
+  padding-left: 46px;
+
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f1cdb3;
+  letter-spacing: 1.3px;
+}
+
+.location__adresses li::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -6px;
+  width: 30px;
+  height: 36px;
+
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location__adresses .location__boston::before {
+  top: 6px;
+}
+
+.location__adresses .location__london::before {
+  top: -7px;
+}
+
+.location__boston {
+  margin-bottom: 30px;
+}

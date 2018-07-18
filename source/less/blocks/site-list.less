@@ -1,0 +1,30 @@
+.site-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  margin-left: 41px;
+}
+
+.site-list__item--active {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.site-list__link {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 29px;
+  color: #cdcdcd;
+}
+
+.page--pets .site-list__link {
+  color: #545454;
+}
