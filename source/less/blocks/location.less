@@ -1,5 +1,19 @@
 .location {
+  width: 300px;
   padding-top: 64px;
+}
+
+.location__slogan {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: @white;
 }
 
 .location__adresses li {
@@ -9,7 +23,7 @@
   font-family: "Times New Roman", serif;
   font-size: 20px;
   line-height: 24px;
-  color: #f1cdb3;
+  color: @bg-button-pink;
   letter-spacing: 1.3px;
 }
 
@@ -24,6 +38,12 @@
   background-image: url("../img/pin.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.location__adresses {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .location__adresses .location__boston::before {
