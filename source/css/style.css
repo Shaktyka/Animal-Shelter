@@ -476,6 +476,9 @@ a {
 .site-list__item {
   margin-left: 41px;
 }
+.site-list__item:nth-child(2) {
+  margin-left: 38px;
+}
 .site-list__item--active {
   border-bottom: 3px solid #f1cdb3;
   color: #292929;
@@ -1014,6 +1017,9 @@ a {
   padding: 0;
   width: 300px;
   height: 316px;
+}
+.page--pets .page-footer {
+  padding-top: 0;
 }
 .contacts {
   width: 300px;
