@@ -1130,7 +1130,9 @@ a {
   margin-bottom: 30px;
 }
 .modal {
-  display: none;
+  display: block;
+  position: fixed;
+  z-index: 100;
 }
 .modal__close {
   position: absolute;
