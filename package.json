@@ -44,10 +44,11 @@
     "source/less/**/*.less"
   ],
   "engines": {
-    "node": "10.15"
+    "node": "10.15.3"
   },
   "dependencies": {
     "csso": "^3.5.1",
+    "natives": "^1.1.6",
     "validator": "^10.11.0"
   }
 }

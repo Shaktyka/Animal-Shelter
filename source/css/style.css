@@ -1130,13 +1130,13 @@ a {
   margin-bottom: 30px;
 }
 .modal {
-  position: fixed;
   display: block;
+  position: fixed;
   top: 0;
   left: 0;
-  border: 1px solid gray;
-  background-color: #ffffff;
-  /*z-index: 100;*/
+}
+.show {
+  display: none;
 }
 .modal__close {
   position: absolute;
@@ -1150,6 +1150,19 @@ a {
   height: 14px;
   fill: #292929;
 }
+.modal-pet {
+  /* position: relative; */
+  width: 970px;
+  height: 470px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
+          box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
+}
 .pet__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1161,19 +1174,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.pet {
-  position: relative;
-  width: 970px;
-  height: 470px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 auto;
-  background-color: #fafafa;
-  border: 1px solid #fafafa;
-  border-radius: 15px;
-  -webkit-box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
-          box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
 }
 .pet__pic {
   margin: 0;
