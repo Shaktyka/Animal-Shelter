@@ -1,5 +1,44 @@
 `use strict`;
 
+const needs = [
+  {
+    title: `Pet food`,
+    img: ``
+  },
+  {
+    title: `Transportation`,
+    img: ``
+  },
+  {
+    title: `Toys`,
+    img: ``
+  },
+  {
+    title: `Bowls and cups`,
+    img: ``
+  },
+  {
+    title: `Shampoos`,
+    img: ``
+  },
+  {
+    title: `Vitamins`,
+    img: ``
+  },
+  {
+    title: `Medicines`,
+    img: ``
+  },
+  {
+    title: `Collars / leashes`,
+    img: ``
+  },
+  {
+    title: `Sleeping areas`,
+    img: ``
+  }
+];
+
 const pets = [
   {
     id: 1,
