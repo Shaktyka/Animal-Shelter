@@ -1132,8 +1132,11 @@ a {
 .modal {
   display: block;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .show {
   display: none;
@@ -1148,12 +1151,10 @@ a {
   top: 2px;
   width: 14px;
   height: 14px;
-  fill: #292929;
+  fill: lightgray;
 }
 .modal-pet {
-  /* position: relative; */
   width: 970px;
-  height: 470px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
