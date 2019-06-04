@@ -1130,13 +1130,15 @@ a {
   margin-bottom: 30px;
 }
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .show {
   display: none;
@@ -1155,14 +1157,11 @@ a {
 }
 .modal-pet {
   width: 970px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0 auto;
   background-color: #fafafa;
   border: 1px solid #fafafa;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
-          box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.04);
+  -webkit-box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.15);
+          box-shadow: 2px 2px 30px 20px rgba(13, 13, 13, 0.15);
 }
 .pet__wrapper {
   display: -webkit-box;
