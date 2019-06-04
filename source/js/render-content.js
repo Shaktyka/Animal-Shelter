@@ -1,0 +1,49 @@
+`use strict`;
+
+// Контейнер для карточек
+const contentBlock = document.querySelector(`.list__list`);
+
+// Рендеринг элемента из разметки
+const renderElement = (string) => {
+  const div = document.createElement(`div`);
+  div.innerHTML = string;
+  return div.firstChild;
+};
+
+// Обработчик клика по блоку с карточками
+const contentBlockClickHandler = (evt) => {
+  evt.preventDefault();
+  const clickedElement = evt.currentTarget;
+  console.log(clickedElement);
+};
+
+// Рендеринг карточки животного
+const renderCard = (dataObj) => {
+  const cardMarkup = `<li class="list__item card" data-petId="${dataObj.id}">
+      <div class="card__wrap">
+        <p class="card__img-wrap">
+          <img class="card__img" src="img/${dataObj.img_small}" width="270" height="270" alt="${dataObj.petname} the ${dataObj.pet}">
+        </p>
+        <h3 class="card__title">${dataObj.petname}</h3>
+        <a class="card__button button button--still" href="#" title="Click to get additional information">Learn More</a>
+      </div>
+    </li>`;
+  return cardEl = renderElement(cardMarkup);
+};
+
+// Рендеринг списка карточек животных
+const renderPets = (petsArray, amount, block) => {
+  if (block.children.length > 0) {
+    block.innerHTML = ``;
+  }
+  const fragment = document.createDocumentFragment();
+
+  for (let i = 0; i < amount; i++) {
+    let card = renderCard(petsArray[i]);
+    fragment.appendChild(card);
+    block.appendChild(fragment);
+    block.addEventListener(`click`, contentBlockClickHandler);
+  }
+};
+
+renderPets(pets, 8, contentBlock);
