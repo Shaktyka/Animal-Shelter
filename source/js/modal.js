@@ -1,10 +1,18 @@
 `use strict`;
 
 const petDetailsModal = document.querySelector(`.modal-pet`);
+const closeBtn = petDetailsModal.querySelector(`.modal__close`);
 
 // Закрытие окна описания животного
 const closeDetailsModal = () => {
-  //
+  closeBtn.removeEventListener(`click`, closeBtnClickHandler);
+  petDetailsModal.classList.remove(`show`);
+};
+
+// Обработчик клика по кнопке закрытия модалки
+const closeBtnClickHandler = (evt) => {
+  evt.preventDefault();
+  closeDetailsModal();
 };
 
 // Генерация списка описания животного
@@ -24,7 +32,9 @@ const openDetailsModal = (petObj) => {
   let petRecordsEl = petDetailsModal.querySelector(`.pet__params`);
   petRecordsEl.innerHTML = `No data`;
   // getPetParams(petObj, petRecordsEl) ||
-  // Добавляем обработчик на окно
+
+  // Добавляем обработчик на кнопку закрытия
+  closeBtn.addEventListener(`click`, closeBtnClickHandler);
   // Открываем окно
   petDetailsModal.classList.add(`show`);
 };

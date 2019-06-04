@@ -1144,13 +1144,14 @@ a {
   position: absolute;
   top: -55px;
   right: -55px;
+  background-color: #ffffff;
 }
 .modal__close svg {
   position: relative;
   top: 2px;
   width: 14px;
   height: 14px;
-  fill: lightgray;
+  fill: #545454;
 }
 .modal-pet {
   width: 970px;
