@@ -1130,9 +1130,13 @@ a {
   margin-bottom: 30px;
 }
 .modal {
-  display: block;
   position: fixed;
-  z-index: 100;
+  display: block;
+  top: 0;
+  left: 0;
+  border: 1px solid gray;
+  background-color: #ffffff;
+  /*z-index: 100;*/
 }
 .modal__close {
   position: absolute;
