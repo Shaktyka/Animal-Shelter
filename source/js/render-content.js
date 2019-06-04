@@ -11,15 +11,18 @@ const renderElement = (string) => {
 };
 
 // Обработчик клика по блоку с карточками
-const contentBlockClickHandler = (evt) => {
+const cardClickHandler = (evt) => {
   evt.preventDefault();
   const clickedElement = evt.currentTarget;
-  console.log(clickedElement);
+  const petId = clickedElement.dataset.petid;
+
+  // Показываем модальное окно c подробным описанием животного
+  showModal(petId);
 };
 
 // Рендеринг карточки животного
 const renderCard = (dataObj) => {
-  const cardMarkup = `<li class="list__item card" data-petId="${dataObj.id}">
+  const cardMarkup = `<li class="list__item card" data-petid="${dataObj.id}">
       <div class="card__wrap">
         <p class="card__img-wrap">
           <img class="card__img" src="img/${dataObj.img_small}" width="270" height="270" alt="${dataObj.petname} the ${dataObj.pet}">
@@ -40,9 +43,9 @@ const renderPets = (petsArray, amount, block) => {
 
   for (let i = 0; i < amount; i++) {
     let card = renderCard(petsArray[i]);
+    card.addEventListener(`click`, cardClickHandler);
     fragment.appendChild(card);
     block.appendChild(fragment);
-    block.addEventListener(`click`, contentBlockClickHandler);
   }
 };
 

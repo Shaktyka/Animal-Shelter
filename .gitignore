@@ -10,3 +10,4 @@ node_modules/
 unnecessary/
 npm-debug.*
 Thumbs.db
+source/css/
