@@ -761,6 +761,9 @@ a {
   padding: 0;
   list-style: none;
 }
+.list__list .card__wrap {
+  margin-left: 0;
+}
 .page--pets .list__item {
   margin-right: 30px;
   margin-bottom: 34px;
