@@ -3,13 +3,6 @@
 // Контейнер для карточек
 const contentBlock = document.querySelector(`.list__list`);
 
-// Рендеринг элемента из разметки
-const renderElement = (string) => {
-  const div = document.createElement(`div`);
-  div.innerHTML = string;
-  return div.firstChild;
-};
-
 // Обработчик клика по блоку с карточками
 const cardClickHandler = (evt) => {
   evt.preventDefault();
@@ -17,7 +10,7 @@ const cardClickHandler = (evt) => {
   const petId = clickedElement.dataset.petid;
 
   // Показываем модальное окно c подробным описанием животного
-  showModal(petId);
+  openDetailsModal(pets[petId - 1]);
 };
 
 // Рендеринг карточки животного
